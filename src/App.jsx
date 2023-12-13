@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/landing-pages">
         <Routes>
           <Route path="/" element={<IndexPage />}/>
           <Route path="/hello" element={<Hello />} />
