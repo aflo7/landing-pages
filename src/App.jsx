@@ -1,5 +1,5 @@
 
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
 import Nordson from './pages/nordson/Nordson.jsx';
 
@@ -16,13 +16,13 @@ function App() {
 
   return (
     <>
-      <BrowserRouter basename="/landing-pages">
+      <HashRouter basename="/landing-pages">
         <Routes>
           <Route path="/nordson" element={<Nordson />} />
           <Route path="/hello" element={<Hello />} />
           <Route path="/" element={<IndexPage />}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
