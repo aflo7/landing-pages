@@ -18,9 +18,9 @@ function App() {
     <>
       <BrowserRouter basename="/landing-pages">
         <Routes>
-          <Route path="/" element={<IndexPage />}/>
-          <Route path="/hello" element={<Hello />} />
           <Route path="/nordson" element={<Nordson />} />
+          <Route path="/hello" element={<Hello />} />
+          <Route path="/" element={<IndexPage />}/>
         </Routes>
       </BrowserRouter>
     </>
